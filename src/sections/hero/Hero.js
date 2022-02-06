@@ -79,7 +79,7 @@ class Hero extends React.Component {
         `
 
         const Heading2 = styled.h2`
-            font-size: 120px;
+            font-size: 75px;
             color: #fff;
             font-weight: 700;
             text-transform: uppercase;
@@ -216,7 +216,7 @@ class Hero extends React.Component {
                                    Bitechly
                                 </Heading1>
                                 <Heading2>
-                             Innovate and transform 
+                                We create digital transformation through high quality software
                                 </Heading2>
                                 <Separator/>
                                 <Type>
@@ -225,7 +225,7 @@ class Hero extends React.Component {
                                         strings: [
                                             'App Developement',
                                             'Web Development',
-                                            'UI/UX Development',
+                                            'UI/UX Design',
                                             'Software Development consultancy',
                                         ],
                                         autoStart: true,
