@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-
+import axios from 'axios';
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 class ContactOneForm extends React.Component {
       constructor(props) {
         super(props)
@@ -9,15 +11,35 @@ class ContactOneForm extends React.Component {
             email: "",
             phone: "",
             message: "",
-            error: false
+            error: false,
+            successMessage:"",
+            errorMessage:""
         }
     }
 
-    formSubmit() {
+    async formSubmit () {
       if (this.state.name === "" || this.state.email === "" || this.state.message === "") {
           this.setState({error: true})
       } else {
           this.setState({error: false})
+          const {name,email,phone,message }=this.state
+          try {
+            const response = await axios.post(`${process.env.GATSBY_APP_URL}/api/v1/messages`, {
+              name,email,phone,message
+             });
+            if(response.data.message){
+              this.setState({name:"",email:"",phone:"",message:"",successMessage:response.data.message}) 
+              toastr.success(this.state.successMessage)
+              this.setState({successMessage:""}) 
+            }
+            else{
+              this.setState({errorMessage:"An error has occured, please contact bitechly custumer support"})
+              await toastr.error("An error has occured, please contact Bitechly custumer support")
+            }
+          } catch (error) {
+            this.setState({errorMessage:"An error has occured, please contact bitechly custumer support"})
+            toastr.error("An error has occured, please contact Bitechly custumer support")
+          } 
       }
       this.forceUpdate()
     }
@@ -157,7 +179,7 @@ class ContactOneForm extends React.Component {
                 <Input type="text" defaultValue={this.state.email} className={`email ${this.check(this.state.email) ? "" : "error"}`} placeholder="Email" onChange={e => this.setState({email: e.target.value})} />
               </InputElement>
               <InputElement>
-                <Input type="text" defaultValue={this.state.phone} className="phone" placeholder="Phone" onChange={e => this.setState({phone: e.target.value})} />
+                <Input type="text" defaultValue={this.state.phone}  className={`phone ${this.check(this.state.phone) ? "" : "error"}`}   placeholder="Phone" onChange={e => this.setState({phone: e.target.value})} />
               </InputElement>
               <InputElement>
                 <Textarea placeholder="Message" defaultValue={this.state.message}  className={`message ${this.check(this.state.message) ? "" : "error"}`} onChange={e => this.setState({message: e.target.value})} />
