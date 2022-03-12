@@ -143,8 +143,8 @@ class ContactCreative extends React.Component {
                                 Phone
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink href="tel:+(123)123-1234">
-                                  (123) 456-7890
+                              <InfoLink href="tel:+250791112052">
+                                  +250791112052
                                 </InfoLink>
                               </InfoLinkContainer>
                             </Info>
