@@ -12,7 +12,7 @@ services:
   official_web:
     restart: on-failure
     build: ./
-    env_file: ./.env
+    env_file: ./.env.production
 
     container_name: bitechly_web
     ports:
