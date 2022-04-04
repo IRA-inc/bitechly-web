@@ -143,7 +143,7 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                         <ServiceElement>
                                             <ServiceIcon>
-                                                    <img src={this.props.mobile.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                    <img src={this.props?.mobile?.childImageSharp?.fluid.src} alt="Mobile App Development" />
                                             </ServiceIcon>
                                             <ServiceHeading>
                                                 Mobile App Development
@@ -167,7 +167,7 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInDown"  delay={400}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.web.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props?.web?.childImageSharp?.fluid?.src} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
                                             Web  Development
@@ -191,7 +191,7 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInRight" delay={600}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.email.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props?.email?.childImageSharp?.fluid?.src} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
                                             Email Marketing
@@ -215,7 +215,7 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.seo.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props?.seo?.childImageSharp?.fluid?.src} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
                                             Search Engine Optimization
@@ -239,7 +239,7 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInUp" delay={1000}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                                <img src={this.props.network.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                <img src={this.props?.network?.childImageSharp?.fluid?.src} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
                                             Network Management
@@ -263,7 +263,7 @@ class ServicesOne extends React.Component {
                                     <AnimationContainer animation="fadeInRight" delay={1200}>
                                         <ServiceElement>
                                             <ServiceIcon>
-                                                    <img src={this.props.ui.childImageSharp.fluid.src} alt="Mobile App Development" />
+                                                    <img src={this.props?.ui?.childImageSharp?.fluid?.src} alt="Mobile App Development" />
                                             </ServiceIcon>
                                             <ServiceHeading>
                                                 UI/UX Development

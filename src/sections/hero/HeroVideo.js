@@ -251,7 +251,7 @@ class HeroVideo extends React.Component {
                                     <Service>
                                         <ServiceContent>
                                             <ServiceIcon>
-                                                <img src={this.props.webexpertIcon.childImageSharp.fluid.src} alt="web experts" />
+                                                <img src={this.props?.webexpertIcon?.childImageSharp?.fluid.src} alt="web experts" />
                                             </ServiceIcon>
                                             <ServiceHeading>Web Experts</ServiceHeading>
                                             <ServiceSeparator/>
@@ -266,7 +266,7 @@ class HeroVideo extends React.Component {
                                     <Service>
                                         <ServiceContent>
                                             <ServiceIcon>
-                                                    <img src={this.props.mobileIcon.childImageSharp.fluid.src} alt="mobile experts" />
+                                                    <img src={this.props?.mobileIcon?.childImageSharp?.fluid?.src} alt="mobile experts" />
                                             </ServiceIcon>
                                             <ServiceHeading>Mobile Experts</ServiceHeading>
                                             <ServiceSeparator/>
@@ -281,7 +281,7 @@ class HeroVideo extends React.Component {
                                     <Service>
                                         <ServiceContent>
                                             <ServiceIcon>
-                                                    <img src={this.props.seoIcon.childImageSharp.fluid.src} alt="seo experts" />
+                                                    <img src={this.props?.seoIcon?.childImageSharp?.fluid.src} alt="seo experts" />
                                             </ServiceIcon>
                                             <ServiceHeading>SEO Experts</ServiceHeading>
                                             <ServiceSeparator/>

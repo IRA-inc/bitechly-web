@@ -100,22 +100,22 @@ class AboutTwo extends React.Component {
         text-align: left;
       }
     `;
-    const Color = styled.span`
-      color: #04e5e5;
-      font-size: 75px;
-      line-height: 70px;
-      font-family: Teko;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      @media (min-width: 768px) and (max-width: 1600px) {
-        font-size: 40px;
-        line-height: 40px;
-      }
-      @media (max-width: 767px) {
-        font-size: 40px;
-        line-height: 40px;
-      }
-    `;
+    // const Color = styled.span`
+    //   color: #04e5e5;
+    //   font-size: 75px;
+    //   line-height: 70px;
+    //   font-family: Teko;
+    //   text-transform: uppercase;
+    //   letter-spacing: 2px;
+    //   @media (min-width: 768px) and (max-width: 1600px) {
+    //     font-size: 40px;
+    //     line-height: 40px;
+    //   }
+    //   @media (max-width: 767px) {
+    //     font-size: 40px;
+    //     line-height: 40px;
+    //   }
+    // `;
 
     const Image = styled.img`
       max-height: 500px;
@@ -305,8 +305,10 @@ class AboutTwo extends React.Component {
                 <AnimationContainer animation="fadeIn" delay={1500}>
                   <AboutContent>
                     <Heading>
-                     we are <Color>Bitechly</Color>,a company that transform{" "}
-                      <Color>Technolgy</Color>
+                     About us
+                     {/* <Color></Color> */}
+                     {/* ,a company that transform{" "}
+                      <Color>Technolgy</Color> */}
                     </Heading>
                     <Separator />
                     <Text>
