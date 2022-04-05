@@ -16,7 +16,7 @@ services:
 
     container_name: bitechly_web
     ports:
-      - '8000:8000'
+      - '80:80'
     environment:
       - ./.env
     volumes:
