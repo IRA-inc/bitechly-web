@@ -12,12 +12,12 @@ services:
   official_web:
     restart: on-failure
     build: ./
-    env_file: ./.env.production
+    # env_file: ./.env.production
 
     container_name: bitechly_web
     ports:
       - '8082:8082'
-      - '80:80'
+      # - '80:80'
     environment:
       - ./.env
     volumes:
