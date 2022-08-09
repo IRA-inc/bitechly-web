@@ -108,7 +108,7 @@ class ContactCreative extends React.Component {
                       <ContactCol md={6}>
                         <Map  
                           title="map"
-                          src="https://maps.google.com/maps?q=kigali,gakinjiro&t=&z=13&ie=UTF8&iwloc=&output=embed"/>
+                          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15949.985475376558!2d30.09765659999999!3d-1.9548286999999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x19dca7ae8793859d%3A0x3c350ecc1be6aa12!2sBitechly%20Ltd%2C%20KG%20622%20St%2C%20Kigali!3m2!1d-1.9548287!2d30.097656599999997!5e0!3m2!1sen!2srw!4v1660055216430!5m2!1sen!2srw"/>
                       </ContactCol>
                     </FormRow>
                   </AnimationContainer>
