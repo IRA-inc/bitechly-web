@@ -124,8 +124,8 @@ class ContactCreative extends React.Component {
                                 Email
                               </InfoTitle>
                               <InfoLinkContainer>
-                                <InfoLink href="mailto:bitechly@gmail">
-                                  bitechly@gmail.com
+                                <InfoLink href="mailto:info@bitechly.com">
+                                  info@bitechly.com
                                 </InfoLink>
                               </InfoLinkContainer>
                             </Info>
