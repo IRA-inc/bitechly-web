@@ -137,21 +137,21 @@ class TeamItem extends React.Component {
                             <Info>
                                 <Name>{this.props.name}</Name>
                                 <Profession>{this.props.profession}</Profession>
-                                <Social>
+                                {/* <Social>
                                     <FontAwesomeIcon icon={faFacebook} onClick={() => window.open(this.props.facebook)}/>
                                     <FontAwesomeIcon icon={faTwitter} onClick={() => window.open(this.props.twitter)} />
                                     <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open(this.props.linkedin)} />
                                     <FontAwesomeIcon icon={faGithub} onClick={() => window.open(this.props.github)} />
-                                </Social>
+                                </Social> */}
                             </Info>
                         </MobileContent>
                         <DesktopContent
                             name={this.props.name}
                             profession={this.props.profession}
-                            facebook={this.props.facebook}
-                            twitter={this.props.twitter}
-                            linkedin={this.props.linkedin}
-                            github={this.props.github}
+                            // facebook={this.props.facebook}
+                            // twitter={this.props.twitter}
+                            // linkedin={this.props.linkedin}
+                            // github={this.props.github}
                             ref={(cd) => this.child = cd}
                             type={this.props.type}
                         />
@@ -167,21 +167,21 @@ class TeamItem extends React.Component {
                             <Info>
                                 <Name>{this.props.name}</Name>
                                 <Profession>{this.props.profession}</Profession>
-                                <Social>
+                                {/* <Social>
                                     <FontAwesomeIcon icon={faFacebook} onClick={() => window.open(this.props.facebook)}/>
                                     <FontAwesomeIcon icon={faTwitter} onClick={() => window.open(this.props.twitter)} />
                                     <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open(this.props.linkedin)} />
                                     <FontAwesomeIcon icon={faGithub} onClick={() => window.open(this.props.github)} />
-                                </Social>
+                                </Social> */}
                             </Info>
                         </MobileContent>
                         <DesktopContent
                             name={this.props.name}
                             profession={this.props.profession}
-                            facebook={this.props.facebook}
-                            twitter={this.props.twitter}
-                            linkedin={this.props.linkedin}
-                            github={this.props.github}
+                            // facebook={this.props.facebook}
+                            // twitter={this.props.twitter}
+                            // linkedin={this.props.linkedin}
+                            // github={this.props.github}
                             ref={(cd) => this.child = cd}
                             type={this.props.type}
                         />

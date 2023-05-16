@@ -117,12 +117,12 @@ class DesktopContent extends React.Component {
                             {this.props.profession}
                         </Baffle>
                     </Profession>
-                    <Social>
+                    {/* <Social>
                         <FontAwesomeIcon icon={faFacebook} onClick={() => window.open(this.props.facebook)}/>
                         <FontAwesomeIcon icon={faTwitter} onClick={() => window.open(this.props.twitter)} />
                         <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open(this.props.linkedin)} />
                         <FontAwesomeIcon icon={faGithub} onClick={() => window.open(this.props.github)} />
-                    </Social>
+                    </Social> */}
                 </>
             )
         }
