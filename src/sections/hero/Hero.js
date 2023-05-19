@@ -223,10 +223,10 @@ class Hero extends React.Component {
                                     <Typewriter
                                         options={{
                                         strings: [
-                                            'App Developement',
-                                            'Web Development',
+                                            'Sofware Developement',
+                                            'Resource Augmentation',
                                             'UI/UX Design',
-                                            'Software Development consultancy',
+                                            'Consultancy & Strategy',
                                         ],
                                         autoStart: true,
                                         loop: true,

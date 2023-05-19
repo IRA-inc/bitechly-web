@@ -17,6 +17,7 @@ class ServicesOne extends React.Component {
             background-color: #111;
             background-image: url(${this.props.background.childImageSharp.fluid.src});
             background-size: cover;
+            width: 100%;
             .heading {
                 width: 100%;
             }
@@ -30,7 +31,7 @@ class ServicesOne extends React.Component {
 
     const ServiceElement = styled.div`
       margin-bottom: 20px;
-      text-align: center;
+      text-align: left;
       padding: 40px;
       border-radius: 20px;
       transition: 0.2s;
@@ -45,10 +46,11 @@ class ServicesOne extends React.Component {
       font-weight: 500;
       font-family: Teko;
       color: #fff;
+      width: 100%;
     `;
     const ServiceSeparator = styled.div`
       height: 5px;
-      width: 50px;
+      width: 100%;
       background-color: #04e5e5;
       margin-bottom: 10px;
       margin: auto;
@@ -96,17 +98,20 @@ class ServicesOne extends React.Component {
                     <ServiceIcon>
                       <img
                         src={this.props.mobile.childImageSharp.fluid.src}
-                        alt="Mobile App Development"
+                        alt="Software Development"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Mobile App Development</ServiceHeading>
+                    <ServiceHeading>Software Development</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
-                      Our teams of highly skilled Developers, Designers,
-                        System Architects, and System Analysts takes care of
-                        your application ensuring that it is always running
-                        smoothly and stays up to date.
+                      Mobile Application devpt
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Cloud platform devpt & Integration
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Web application devpt
                       </ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
@@ -118,17 +123,29 @@ class ServicesOne extends React.Component {
                     <ServiceIcon>
                       <img
                         src={this.props.web.childImageSharp.fluid.src}
-                        alt="Mobile App Development"
+                        alt="Resource Augmentation"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>Web Development</ServiceHeading>
+                    <ServiceHeading>Resource Augmentation</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
-                        Our teams of highly skilled Developers, Designers,
-                        System Architects, and System Analysts takes care of
-                        your application ensuring that it is always running
-                        smoothly and stays up to date.
+                      Team augmentation
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Product ownership
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Agile products teams
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      DevOps
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Systems integration
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Cloud migration
                       </ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
@@ -188,14 +205,23 @@ class ServicesOne extends React.Component {
                     <ServiceIcon>
                       <img
                         src={this.props.ui.childImageSharp.fluid.src}
-                        alt="Mobile App Development"
+                        alt="Design"
                       />
                     </ServiceIcon>
-                    <ServiceHeading>UI/UX Development</ServiceHeading>
+                    <ServiceHeading>Design</ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
-                        We design products that people want to use.
+                      UI/UX Development
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Wireframes
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      User flows designs
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Digital Marketing
                       </ServiceListElement>
                     </ServiceList>
                   </ServiceElement>
@@ -207,18 +233,52 @@ class ServicesOne extends React.Component {
                     <ServiceIcon>
                       <img
                         src={this.props.network.childImageSharp.fluid.src}
-                        alt="Mobile App Development"
+                        alt="Consultancy & Strategy"
                       />
                     </ServiceIcon>
                     <ServiceHeading>
-                      Software Development consulatancy
+                    Consultancy & Strategy
                     </ServiceHeading>
                     <ServiceSeparator />
                     <ServiceList>
                       <ServiceListElement>
-                        The digital enterprise has arrived, and it impacts all
-                        sectors of activity. Our consultants provide premium
-                        software consultancy to your company.
+                      Product planning & Discovery
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Customer Journey
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Project Estimation & Strategic Priotization
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Technical research
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Risk analysis
+                      </ServiceListElement>
+                    </ServiceList>
+                  </ServiceElement>
+                </AnimationContainer>
+              </Col>
+              <Col md={4}>
+                <AnimationContainer animation="fadeInUp" delay={1000}>
+                  <ServiceElement>
+                    <ServiceIcon>
+                      <img
+                        src={this.props.network.childImageSharp.fluid.src}
+                        alt="Support"
+                      />
+                    </ServiceIcon>
+                    <ServiceHeading>
+                    Support
+                    </ServiceHeading>
+                    <ServiceSeparator />
+                    <ServiceList>
+                      <ServiceListElement>
+                      Tailored Development support
+                      </ServiceListElement>
+                      <ServiceListElement>
+                      Retained maintenance
                       </ServiceListElement>
                     </ServiceList>
                   </ServiceElement>

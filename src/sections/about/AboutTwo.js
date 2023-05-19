@@ -312,12 +312,13 @@ class AboutTwo extends React.Component {
                     </Heading>
                     <Separator />
                     <Text>
-                      We provide software development services that crosses
-                      borders, by providing high quality softwares to our
-                      clients. We Design, Build and Manage our software
-                      platforms and our clients' software solutions. We pay
-                      close attention to our customers needs and consistently
-                      deliver what they need next.
+                    Welcome to Bitechly Ltd! We are a team of experts dedicated to helping businesses achieve their goals through strategic advice and custom software development. We understand that in today's fast-paced world, staying competitive requires continuous innovation and improvement. That's where we come in.
+
+With our extensive experience in software development and business strategy, we help our clients uncover opportunities for improved operations and efficiencies. Whether you need to modernise existing infrastructure or outdated systems, or you have a vision for a completely new way of working, we work hand in hand with your teams to deliver these changes in a safe and cost-effective way.
+
+Our goal is to empower our clients with the tools they need to succeed in their respective industries. We pride ourselves on our ability to understand the unique challenges that our clients face and provide tailored solutions that meet their specific needs.
+
+At our core, we are committed to delivering exceptional results and building long-term partnerships with our clients. Contact us today to learn more about how we can help your business reach its full potential.
                     </Text>
                   </AboutContent>
                 </AnimationContainer>

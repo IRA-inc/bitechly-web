@@ -4,6 +4,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 import styled from 'styled-components'
 import PortfolioItem from 'sections/portfolio/parts/PortfolioItem.js'
 import AnimatedHeading from 'components/animated-heading'
+import vosplayLogo from '../../../content/images/vosplay-logo.png'
 
 class PortfolioOne extends React.Component {
     
@@ -37,17 +38,25 @@ class PortfolioOne extends React.Component {
     }
 
   portfolio() {
-      const { items } = this.props
+      // const { items } = this.props
+      const items=[{
+id: 1,
+image: vosplayLogo,
+title: "vosplay",
+category: "Streaming platform",
+link: "https://vosplay.tv",
+
+      }]
       
       return items.map((value, index) => {
         return (
           <Col md={4} key={index}>
               <PortfolioItem 
                 index={index} 
-                image={value.content.frontmatter.image.childImageSharp.fluid.src} 
-                text={value.content.frontmatter.title} 
-                category={value.content.frontmatter.category}
-                link={value.content.frontmatter.link}
+                image={value.image} 
+                text={value.title} 
+                category={value.category}
+                link={value.link}
                 type="col"
               />
           </Col>
@@ -81,6 +90,6 @@ export default props => (
               }
             }           
           `}
-      render={({ items }) => <PortfolioOne items={items.edges} {...props} />}
+      render={() => <PortfolioOne {...props} />}
   />
 )

@@ -5,9 +5,9 @@ import Helmet from 'react-helmet'
 import Hero from 'sections/hero/Hero.js'
 import AboutTwo from 'sections/about/AboutTwo.js'
 import ServicesOne from 'sections/services/ServicesOne.js'
-// import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
+import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
 // import TestimonialsOne from 'sections/testimonials/TestimonialsOne.js'
-// import TeamOne from 'sections/team/TeamOne.js'
+import TeamOne from 'sections/team/TeamOne.js'
 // import ClientsOne from 'sections/clients/ClientsOne.js'
 import ContactCreative from 'sections/contact/ContactCreative.js'
 
@@ -33,10 +33,10 @@ class Index extends React.Component {
           <Hero />
           <AboutTwo />
           <ServicesOne />
-          {/* <PortfolioOne />
-          <TestimonialsOne />
+          <PortfolioOne />
+          {/* <TestimonialsOne /> */}
           <TeamOne />
-          <ClientsOne /> */}
+          {/* <ClientsOne /> */}
           <ContactCreative />
         </Layout>
       </div>
