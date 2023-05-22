@@ -105,7 +105,7 @@ class TeamOne extends React.Component {
         id: 1,
         image: roger,
         name: "Izere Roger Sabin",
-        profession: "Product manger",
+        profession: "Product manager",
         // facebook: "https://www.facebook.com/",
         // twitter: "https://www.twitter.com/",
         // linkedin: "https://www.linkedin.com/",
